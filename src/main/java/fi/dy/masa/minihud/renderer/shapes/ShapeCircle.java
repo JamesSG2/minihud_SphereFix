@@ -137,7 +137,7 @@ public class ShapeCircle extends ShapeCircleBase
         double distSq = effectiveCenter.squaredDistanceTo(x, y, z);
         double diff = radiusSq - distSq;
 
-        if (diff > 0)
+        if (diff >= 0)
         {
             return true;
         }
